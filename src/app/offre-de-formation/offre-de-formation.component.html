@@ -1,0 +1,100 @@
+
+
+<div class="container">
+<h1>OFFRES DE FORMATION</h1>
+<div class="center"><img src="assets/formation.png"></div>
+	
+<p> <i class="material-icons">arrow_forward</i> Programmes : Liste des programmes existants sur la plateforme. L'administrateur a la possibilité d’en créer des nouveaux.</p>
+<p> <i class="material-icons">arrow_forward</i> Cours en ligne : Liste des cours en ligne présents sur la plateforme. Cette liste est  à actualiser quand est créé un nouveau cours sur Moodle</p> 
+<p><i class="material-icons">arrow_forward</i> Cours présentiels : Liste des cours présentiels. Ne nous concerne pas dans le cadre de notre plateforme</p>
+<p><i class="material-icons">arrow_forward</i> Sessions : Liste des sessions de tous les centres de formation. L’administrateur a tous les droits.</p>
+<p><i class="material-icons">arrow_forward</i> Télécharger les sessions : Fonctionnalité permettant de créer automatiquement des sessions via fichier CSV</p>
+<p><i class="material-icons">arrow_forward</i> Télécharger les tuteurs : Attention, le titre peut être trompeur car ce sous-menu permet d’assigner automatiquement des tuteurs dans des sessions déjà créés</p>
+
+<h2>Création de nouveaux programmes
+</h2>
+
+<p>Des programmes peuvent être créés suivant les besoins de l’équipe ou des partenaires.
+Pour créer un programme, il faut sélectionner l’option correspondante dans le menu déroulant au-dessus de la liste des programmes.
+Le formulaire suivant apparaît :
+</p>
+
+<div class="center"><img src="assets/programme.png"></div>
+
+<p> <i class="material-icons">arrow_forward</i> Programme : Nom du programme</p>
+<p> <i class="material-icons">arrow_forward</i> ID du programme : Identifiant du programme.</p> 
+<p><i class="material-icons">arrow_forward</i> Modalité : En ligne ou en présentiel</p>
+<p><i class="material-icons">arrow_forward</i> Description : Description du cours (facultatif)</p>
+<p><i class="material-icons">arrow_forward</i> Contenu : Contenu du cours (facultatif)</p>
+<p><i class="material-icons">arrow_forward</i> Date de création : À laisser de préférence à la date du jour de création</p>
+<p><i class="material-icons">arrow_forward</i> Date de début et de fin : Début et fin du programme</p>
+<p><i class="material-icons">arrow_forward</i> Durée et coût total : Facultatif </p>
+
+<p>En dessous de cette première partie, se trouve un tableau pour sélectionner le centre du programme.
+</p>
+<div class="center"><img src="assets/liste.png">Illustration 5: Formulaire de création d'un programme - partie 2
+</div>
+
+<p>En effet, certains programmes n’existent que pour certains centres. Il serait malvenu que tous les centres puissent les voir.
+Pour choisir les centres dans lesquels le programme sera disponible, il suffit de cliquer sur le « + » pour ajouter.
+
+Une fois cette étape accomplie, il faut sélectionner les cours à associer au programme. Dans notre cas, on configurera uniquement des cours en ligne.
+</p>
+
+<div class="center"><img src="assets/liste2.png">Illustration 6: Formulaire de création d'un programme - partie 3
+
+</div>
+
+<p>On sélectionne les cours dans la liste déroulante et on enregistre pour ajouter le cours.
+Un programme peut tout à fait contenir plusieurs cours (cf programme A1-6 unités).
+</p>
+
+<h2>Liste des cours en ligne et présentiels
+</h2>
+
+<p>Les listes des cours en ligne et présentiels sont tirées de Moodle. Dans notre cas, nous n’avons pas de cours présentiels.
+Cette liste est à mettre à jour quand on crée un nouveau cours sur Moodle.
+Chaque cours possède sa « fiche » avec ses éléments.
+</p>
+
+<div class="center"><img src="assets/presentiel.png">Illustration 7: Fiche du cours A1-6 unités
+
+
+</div>
+ <p>L’id du cours est utilisé dans l’upload automatique de tuteurs sur une session (voir §3.5). Il figure dans le fichier CSV sous le champ COURS.
+IMPORTANT : Lors de l’ajout d’un tuteur sur la plateforme, il faut aussi mettre à jour la liste des cours pour que le tuteur apparaisse bien dans la liste des tuteurs disponibles pour le cours.
+Si le tuteur n’apparaît pas dans la liste lors de la création d’une session, c’est parce que sur la fiche du cours, il n’est pas dans la liste des tuteurs disponibles.
+</p>
+
+<h2>Sessions</h2>
+
+<p>La création de sessions est entièrement traitée dans le guide du gestionnaire.
+Chaque centre partenaire est autonome dans la gestion de ses sessions.
+</p>
+
+<h2>Télécharger les sessions</h2>
+
+<p>Le fichier CSV demandé par cette fonction nous permet de créer des nouvelles sessions automatiquement.
+Les sessions sont créées sur des programmes déjà définis.</p>
+<p>La liste des champs à remplir suit le formulaire manuel de créations de sessions.</p>
+Cependant, il faut faire attention à deux choses :
+<p>-	ID : Quand il s’agit d’une nouvelle session, l’ID a les valeurs new, NEW, 0 ou vide. Aussi étrange que cela puisse paraître, ISYC nous affirme que nous pouvons laisser ce champ vide.</p>
+<p>-	CODE DE LA SESSION ou NOM DE GROUPE : Il faut remplir un de ces deux champs afin de d’identifier la session dans le cas d’une modification.</p>
+<p>-	PROGRAMME : Ce champ fait référence au nom du programme et non à l’ID du programme (cf §3.1)
+</p>
+
+<h2>Télécharger les tuteurs</h2>
+
+<p>Malgré un titre trompeur, cette option nous permet d’assigner automatiquement des tuteurs à des sessions déjà créées.</p>
+La liste des champs à remplir est la suivante :
+<p>-	METHODE : La procédure pour remplir ce champ est expliquée sur la plateforme</p>
+<p>-	UTILISATEUR : Nom d’utilisateur (adresse mail)</p>
+<p>-	ROLE : Le rôle du tuteur. Le chiffre 3 correspond au rôle d’éditeur. Le chiffre 4 à celui de tuteur.</p>
+<p>-	SESSION : Nom de la session</p>
+<p>-	COURS : Id du cours</p>
+
+
+
+
+
+</div>

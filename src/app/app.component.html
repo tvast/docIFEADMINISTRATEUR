@@ -1,0 +1,62 @@
+<nav class="white" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">
+    	<img width="50%" src="http://www.institutfrancais.es/madrid/adjuntos/logotipo_20160719.jpg"></a>
+      <div id="mySidenav" class="sidenav">
+		  <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
+		  <a routerLink="/general" href="#">GENERAL</a>
+		  <a routerLink="/gestionUtilisateur" href="#">GESTION DES UTILISATEUR</a>
+		  <a routerLink="/offre" href="#">OFFRES DE FORMATION</a>
+		  <a routerLink="/eleve" href="#">ÉLÈVES</a>
+		  <a routerLink="/general" href="#">AUTRES OPTIONS DU MENU</a>
+		  <a routerLink="/doc" class="white-text" href="#!">ABREVIATION</a>
+	</div>
+
+<!-- Use any element to open the sidenav -->
+<span class="right black-text" (click)="openNav()">MENU</span>
+    </div>
+  </nav>
+  
+
+<router-outlet></router-outlet>
+
+  <footer class="page-footer light-blue lighten-1">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Company Bio</h5>
+          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Settings</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Abreviation</a></li>
+            <li><a class="white-text" href="#!">GENERAL</a></li>
+            <li><a class="white-text" href="#!">GESTION DES UTILISATEUR</a></li>
+            <li><a class="white-text" href="#!">OFFRES DE FORMATION</a></li>
+            <li><a class="white-text" href="#!">ÉLÈVE</a></li>
+            <li><a class="white-text" href="#!">AUTRES OPTIONS DU MENU</a></li>
+          </ul>
+          <a href="#"></a>
+  <a href="#"></a>
+  <a href="#"></a>
+  <a href="#">S</a>
+    <a href="#"></a>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      </div>
+    </div>
+  </footer>
